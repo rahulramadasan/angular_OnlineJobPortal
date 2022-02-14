@@ -1,0 +1,51 @@
+<div >
+    <div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>JobId</th>
+                        <th>Job Title</th>
+                        <th>Posted Date </th>
+                        <th>Role</th>
+                        <th>Company Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let job of jobs;let i = index">
+                        <td>{{job.jobid}}</td>
+                        <td>{{job.jobtitle}}</td>
+                        <td>{{job.jobposteddate}}</td>
+                        <td>{{job.jobrole}}</td>
+                        <td>{{job.jobcompany}}</td>
+                        <td><a class=" btn nav-link bg-success text-white" [routerLink]="['/editjob/',job._id]" routerLinkActive="active">
+                            Edit</a></td>
+                            <!-- <td><button class="btn btn-danger" (click)='removeJob();'>Delete</button></td> -->
+                        <td><button class="btn btn-danger" (click)='removeJob(job._id);'>Delete</button></td>
+                    </tr>
+                    <!-- <td> -->
+                        <!-- <ul class="navbar-nav mr-auto  ">
+                            <li class="nav-item ">
+                                <a class=" btn nav-link bg-success text-white" [routerLink]="['/editjob/']"
+                                    routerLinkActive="active">
+                                    Edit</a> -->
+                                <!-- <a class=" btn nav-link bg-success text-white" [routerLink]="['/editjob/', job._id]" routerLinkActive="active">
+                                Edit</a> -->
+                            <!-- </li>
+                        </ul>
+
+                    </td>
+                    <td>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item "> -->
+                                <!-- <button  class="btn btn-danger" (click)='removeJob(job,job._id);'>Delete</button> -->
+                                <!-- <button class="btn btn-danger" (click)='removeJob()'>Delete</button>
+
+                            </li>
+                        </ul>
+                    </td> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

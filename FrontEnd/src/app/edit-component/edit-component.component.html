@@ -1,0 +1,82 @@
+<br>
+<br>
+
+<div class="addjob  ">
+    <div class="hdr h-75  d-flex justify-content-center">
+        <h1>Edit Job Post</h1>
+    </div>
+    
+        <form action="" (ngSubmit)="updateJob()" method="post" class=" justify-content-center" #jobjb="ngForm">
+            <div class="form-group">
+                <label for="jobid">Job Id</label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobid" id="jobid" name="jobid"  required>
+            </div>
+            <div class="form-group">
+                <label for="jobtitle">Job Title</label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobtitle" id="jobtitle" name="jobtitle" placeholder="Enter job title" required>
+            </div>
+            <div class="form-group">
+                <label for="jobposteddate">Job Posted Date</label>
+                <input type="date" class="form-control" [(ngModel)]="jobs.jobposteddate" id="jobposteddate" name="jobposteddate" placeholder="Enter job posted date" required>
+            </div>
+            <div class="form-group">
+                <label for="jobrole">Job Role</label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobrole" id="jobrole" name="jobrole" placeholder="Enter job role" required>
+            </div>
+            <div class="form-group">
+                <label for="jobcompany">Job Company</label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobcompany" id="jobcompany" name="jobcompany" placeholder="Enter job company" required>
+            </div>
+            <div class="form-group">
+                <label for="jobexperience">Job Experience</label>
+                <input type="text" class="form-control"[(ngModel)]="jobs.jobexperience" id="jobexperience" name="jobexperience" placeholder="Enter job experience" required>
+            </div>
+            <div class="form-group">
+                <label for="jobsalaryrange">Job Salary Range</label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobsalaryrange" id="jobsalaryrange" name="jobsalaryrange" placeholder="Enter job salaryrange" required>
+            </div>
+            <div class="form-group">
+                <label for="jobnoofpositions">Job No of Positions</label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobnoofpositions" id="jobnoofpositions" name="jobnoofpositions" placeholder="Enter job noofpositions" required>
+            </div>
+            <div class="form-group">
+                <label for="joblocation">Job Location </label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.joblocation" id="joblocation" name="joblocation" placeholder="Enter job location " required>
+            </div>
+            <div class="form-group">
+                <label for="jobskills"> Skills </label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobskills" id="jobskills" name="jobskills" placeholder="Enter job skills" required>
+            </div>
+            <div class="form-group">
+                <label for="jobqualification"> Qualification</label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobqualification" id="jobqualification" name="jobqualification" placeholder="Enter  qualification" required>
+            </div>
+            <div class="form-group">
+                <label for="jobdegree"> Degree</label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobdegree" id="jobdegree" name="jobdegree" placeholder="Enter degree" required>
+            </div>
+            <div class="form-group">
+                <label for="jobcompanyinfo"> Company Information</label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobcompanyinfo" id="jobcompanyinfo" name="jobcompanyinfo" placeholder="Enter company information" required>
+            </div>
+            <div class="form-group">
+                <label for="jobemploymenttype">Employment Type </label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobemploymenttype" id="jobemploymenttype" name="jobemploymenttype" placeholder="Enter employment type" required>
+            </div>
+            <div class="form-group">
+                <label for="jobindustrytype">Industry Type </label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobindustrytype" id="jobindustrytype" name="jobindustrytype" placeholder="Enter industry type" required>
+            </div>
+            <div class="form-group">
+                <label for="jobsearchkeyword">Search Keyword </label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobsearchkeyword" id="jobsearchkeyword" name="jobsearchkeyword" placeholder="Enter search keyword" required>
+            </div>
+            <div class="form-group">
+                <label for="jobdescription">Job Description</label>
+                <input type="text" class="form-control" [(ngModel)]="jobs.jobdescription" id="jobdescription" name="jobdescription" placeholder="Enter job description" required>
+            </div>
+            
+            <button class="btn btn-primary">Submit</button>
+        </form>
+   
+</div>

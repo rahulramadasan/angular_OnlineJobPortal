@@ -1,0 +1,19 @@
+.addjob{
+    width: 50%;
+    height: 170vh;
+    margin:auto ;
+    border: 1px solid black;
+}
+.hdr{
+    
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    background-color: rgb(192, 193, 196);
+    font-size: x-large;
+    text-align: center;
+    padding: 10px;
+}
+.form{
+    margin: 30px;
+}
